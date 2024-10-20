@@ -1,0 +1,968 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid e63e39d7-6ac0-4ffd-8aa3-1841a4541b55)
+
+  (paper "A4")
+
+  (title_block
+    (title "Soldered Inkplate 7")
+    (date "2023-08-02")
+    (rev "V1.1.0.")
+    (company "SOLDERED")
+    (comment 1 "333259")
+  )
+
+  (lib_symbols
+  )
+
+
+  (text "E-paper panel" (at 90.805 63.5 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 01c65e5b-031a-48af-9be6-e56cbfa82610)
+  )
+  (text "USB-C,Battery conection,\nUSB to UART,\nVoltage Regulator, \nON/OFF circuit, \nPWR LED, Battery charger,\nReset circuitry"
+    (at 86.36 99.06 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 48c0afbc-134a-4252-93fc-de5401f92970)
+  )
+  (text "Micro Controller \nand GPIO expander" (at 128.905 64.77 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 581e088f-6980-477d-ab85-536c5503921d)
+  )
+  (text "SD card, RTC &\nWakeUp Button" (at 128.27 93.98 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid d46c2d73-379f-42b5-81a1-576937a46f8f)
+  )
+
+  (sheet (at 119.38 81.28) (size 36.83 24.13) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 45eec7c6-a15e-409c-8574-297c02f7ea13)
+    (property "Sheet name" "SD & RTC" (id 0) (at 119.38 80.5684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "SD & RTC.kicad_sch" (id 1) (at 119.38 105.9946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 119.38 50.8) (size 36.83 24.13) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 85688a88-775e-4a4d-a286-17d06163e760)
+    (property "Sheet name" "MCU" (id 0) (at 119.38 50.0884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "MCU.kicad_sch" (id 1) (at 119.38 75.5146 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 81.28 50.8) (size 35.56 24.13) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid d4876469-b949-49ce-b8fe-43cb458692a4)
+    (property "Sheet name" "E-paper" (id 0) (at 81.28 50.0884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "E-paper.kicad_sch" (id 1) (at 81.28 75.5146 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 81.28 81.28) (size 35.56 24.13) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid d7f5ed70-e933-478e-bfdc-450d0e05c7a0)
+    (property "Sheet name" "CTRL & COMS" (id 0) (at 81.28 80.5684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "CTRL & COMS.kicad_sch" (id 1) (at 81.28 105.9946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4" (page "2"))
+    (path "/85688a88-775e-4a4d-a286-17d06163e760" (page "3"))
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0" (page "4"))
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13" (page "5"))
+  )
+
+  (symbol_instances
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/6b242a5e-f672-400b-923d-c5f135f0a066"
+      (reference "#PWR01") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/0b2b85c7-de88-4ec2-ad81-491d234c4f13"
+      (reference "#PWR02") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/b2a76511-5947-4850-9c65-00a7a6de72af"
+      (reference "#PWR03") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/490f1b76-11a7-4dd9-9b7a-7f1899d35d4f"
+      (reference "#PWR04") (unit 1) (value "VGH") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/dd262133-3b1f-402a-8158-3af5e2a197f5"
+      (reference "#PWR05") (unit 1) (value "VDD") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/cac9bfaf-befb-4bc4-a856-70ad5898782f"
+      (reference "#PWR06") (unit 1) (value "VSH") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/1f783e1b-8141-4726-92ac-fc26fdcfa76a"
+      (reference "#PWR07") (unit 1) (value "PREVGH") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/34b39ce7-172f-482c-bd47-dc759d12d7d7"
+      (reference "#PWR08") (unit 1) (value "VSL") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/6e8c30bf-41e6-4b0c-812d-1aa63e1e0d83"
+      (reference "#PWR09") (unit 1) (value "PREVGL") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/16779ab8-0ff0-4e5d-af6b-e1deee959e2e"
+      (reference "#PWR010") (unit 1) (value "VCOM") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/50995e64-7296-4b25-9b24-87ec7499d76b"
+      (reference "#PWR011") (unit 1) (value "VCOM") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/c2350791-8fec-4be3-8b55-c137e0d4720d"
+      (reference "#PWR012") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/6d90ed54-d2eb-481e-8825-b4c0da15c178"
+      (reference "#PWR013") (unit 1) (value "VSL") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/a318c5d8-2e1f-4677-941e-2e6bb7098e55"
+      (reference "#PWR014") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/3e3a6d12-2d26-4cac-b4d5-aabf78002216"
+      (reference "#PWR015") (unit 1) (value "VSH") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/de28e8ca-da94-4b17-90a6-6fd14251e824"
+      (reference "#PWR016") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/4957628a-0487-4b2e-9e46-2b76a5391512"
+      (reference "#PWR017") (unit 1) (value "VDD") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/9cd6be62-894d-4512-bedb-330151173375"
+      (reference "#PWR018") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/8104c9c3-5795-4cc3-a103-8db2de231476"
+      (reference "#PWR019") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/cde4a8d7-df02-40cf-88e8-96c1b0dfb72a"
+      (reference "#PWR020") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/911e0420-07a0-4ee7-b6c6-de532f5db219"
+      (reference "#PWR021") (unit 1) (value "VGH") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/3fb4539e-2b5f-4b67-bd02-4e2291e31b89"
+      (reference "#PWR022") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/cb11120e-f8e3-44a6-bc9a-9e29175bafdb"
+      (reference "#PWR023") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/59cde1ca-d4c4-4553-ab6d-ac30af0b2b13"
+      (reference "#PWR024") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/6ae6f344-3748-4839-993e-5d27aca5df10"
+      (reference "#PWR025") (unit 1) (value "3V3") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/08bb1afe-a1b6-4526-a9d0-eb5567e3b97c"
+      (reference "#PWR026") (unit 1) (value "PREVGL") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/5ff3bf1b-cc9f-4ee1-9b1a-cfa84baa40e4"
+      (reference "#PWR027") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/7b6bd202-6f9a-4305-8f5e-819afa2086ac"
+      (reference "#PWR028") (unit 1) (value "PREVGH") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/0b183dbb-0e44-4b31-a54a-6a06e1d85828"
+      (reference "#PWR029") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/baaf8ecd-8ebf-4199-85ef-8416242b04c0"
+      (reference "#PWR030") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/a750d69e-cb65-4ed6-ad9d-5914969ea708"
+      (reference "#PWR031") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/98d171be-abd4-4508-83af-5bc3bc721c8b"
+      (reference "#PWR032") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/515f47c6-f67e-4e02-8b54-99994e05f34d"
+      (reference "#PWR033") (unit 1) (value "3V3") (footprint "")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/741d2dbe-499a-4dfa-abd4-04eaf3ceb775"
+      (reference "#PWR034") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/52ec4ae8-d339-4d00-8c95-93953c3c3058"
+      (reference "#PWR035") (unit 1) (value "3V3") (footprint "")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/3149d1fe-9b01-4234-86fd-3bd31b8f925a"
+      (reference "#PWR036") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/45421052-4e1a-499f-88aa-872bc74f1f82"
+      (reference "#PWR037") (unit 1) (value "3V3") (footprint "")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/0ee9ff69-1312-415b-9fec-f278743bf9e0"
+      (reference "#PWR038") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/42a9f306-2ce3-4a6c-9a60-cd1f7ee76e6b"
+      (reference "#PWR039") (unit 1) (value "3V3") (footprint "")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/5399b1c6-6237-45d3-b656-d8a879a19be3"
+      (reference "#PWR040") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/7a743fc9-eb55-4e04-8f4f-8c608ffa1d69"
+      (reference "#PWR041") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/971fcb6b-34af-48dc-88f4-5428cbcd4ee7"
+      (reference "#PWR042") (unit 1) (value "3V3") (footprint "")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/f4559cf8-b443-4df3-b335-21420fe4970e"
+      (reference "#PWR043") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/68be759b-71bc-49ff-b733-729f91e576c7"
+      (reference "#PWR044") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/7d44ec3f-89f8-43a6-97b8-3d60207b86e7"
+      (reference "#PWR045") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/99a72be7-b052-45a5-a81c-c01879af864a"
+      (reference "#PWR046") (unit 1) (value "3V3") (footprint "")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/9adba8cf-a187-4272-a4dc-7a894acaa1b7"
+      (reference "#PWR047") (unit 1) (value "3V3") (footprint "")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/a8f16b0c-e3f1-42de-87f2-d441b4a5887a"
+      (reference "#PWR048") (unit 1) (value "VIN") (footprint "")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/5714f684-d966-4f9b-be82-ead6519817ec"
+      (reference "#PWR049") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/c934bc45-5f32-4f33-a86a-ad514c0d3026"
+      (reference "#PWR050") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/84b2b8f2-43e3-4e29-9bb7-8475d4fac364"
+      (reference "#PWR051") (unit 1) (value "VBAT") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/88c1d520-e6af-49c7-a320-992e7d5c5f92"
+      (reference "#PWR052") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/73b71992-f927-4c01-9a79-9963e3d17221"
+      (reference "#PWR053") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/e9c742f6-903a-485f-8b97-7d43209ebe7c"
+      (reference "#PWR054") (unit 1) (value "VUSB") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/34e773b2-0d30-46ba-bf18-7af5cbbb92b1"
+      (reference "#PWR055") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/bf3e369c-93ad-4e32-b7d0-0fb2730e2035"
+      (reference "#PWR056") (unit 1) (value "3V3") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/0f758823-0bd2-4da5-b87d-da32a84dcd8e"
+      (reference "#PWR057") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/4d260736-bb66-43c4-a6fe-7a745ef8f163"
+      (reference "#PWR058") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/b2ca9bf9-25c9-4df6-aa36-8529aadbda2c"
+      (reference "#PWR059") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/f8b95d1a-e4f8-4515-90a4-141b05e62093"
+      (reference "#PWR060") (unit 1) (value "3V3") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/19d30912-67af-4de8-9c63-a1a408237342"
+      (reference "#PWR061") (unit 1) (value "VUSB") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/e2a51f1a-4425-4549-b37b-8a2ce82ad860"
+      (reference "#PWR062") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/e09391e4-9a6a-4084-9be2-7f622e39c58c"
+      (reference "#PWR063") (unit 1) (value "3V3") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/5cad19f4-5f26-4461-8ed3-7e39c055984f"
+      (reference "#PWR064") (unit 1) (value "3V3") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/be634cbc-3575-4ad7-97a4-c7c4dcf40c80"
+      (reference "#PWR065") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/b568bcb3-2cc4-43e3-b94c-5f0a2a087bf7"
+      (reference "#PWR066") (unit 1) (value "VBAT") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/c639e71a-510d-44f3-a4d6-1954e7e64f33"
+      (reference "#PWR067") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/e23fb7e1-005c-425d-ae94-074c5a339c3b"
+      (reference "#PWR068") (unit 1) (value "VBAT") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/2d44580c-58f5-4327-9402-e05bc6065e27"
+      (reference "#PWR069") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/c2050c7b-707a-4571-9d6d-ea0fcac32eb2"
+      (reference "#PWR070") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/9a2d617e-0846-4445-912d-c2e9ca2aa2ea"
+      (reference "#PWR071") (unit 1) (value "VIN") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/118877e3-aada-4196-a2c1-90600a55a3a2"
+      (reference "#PWR072") (unit 1) (value "VBAT") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/d31a32fa-6b40-4c7b-9351-7d8a88b3d1ee"
+      (reference "#PWR073") (unit 1) (value "3V3") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/029ccb8c-909d-44f5-b6ab-3be01cf6293c"
+      (reference "#PWR074") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/3ada834d-9255-4979-b099-7644ad875b7a"
+      (reference "#PWR075") (unit 1) (value "VUSB") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/96338d7e-c430-4a7c-8bad-6c411753833f"
+      (reference "#PWR076") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/1828217d-5ae8-4bad-a935-cea7b001a682"
+      (reference "#PWR077") (unit 1) (value "VBAT") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/815159d0-19a1-4d51-a0dc-1b1b1aa67ba3"
+      (reference "#PWR078") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/74061df0-18e0-4048-b566-76e76ba489a2"
+      (reference "#PWR079") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/b573bb93-4fd7-4ab4-a5e6-f367f066e403"
+      (reference "#PWR080") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/08b3a02e-d63b-4b38-9af8-54d87cc95785"
+      (reference "#PWR081") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/22949a25-a45c-47fc-b266-7f0f66eb81e2"
+      (reference "#PWR082") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/42fd795d-4ca4-4fc3-ac73-ec2457e8f6d1"
+      (reference "#PWR083") (unit 1) (value "VUSB") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/ccc10f2c-437a-439d-b839-d2553692e389"
+      (reference "#PWR084") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/888fc060-f4c4-4790-8ab5-9517c8d2c7db"
+      (reference "#PWR085") (unit 1) (value "3V3") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/8d7faae8-181d-4e19-95e8-c15382de89d6"
+      (reference "#PWR086") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/493a16de-4ae3-435d-8f6b-4ef66126eeeb"
+      (reference "#PWR087") (unit 1) (value "VIN") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/23746fa6-a9c9-4b29-9ae4-62a84efe2417"
+      (reference "#PWR088") (unit 1) (value "VUSB") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/fbe588ba-a20e-4291-ab1e-d66f94bc67b8"
+      (reference "#PWR089") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/f7e83a01-113d-4c9d-ae7b-65df983f7278"
+      (reference "#PWR090") (unit 1) (value "VBAT") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/da70975f-e4b3-40fb-a746-f014aa3da9df"
+      (reference "#PWR091") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/124ddcb1-3136-4b23-997f-cdbac7092117"
+      (reference "#PWR092") (unit 1) (value "VIN") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/5e1d1993-f66f-4a6c-9f20-6d78f1f87416"
+      (reference "#PWR093") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/d6e1e720-1394-4eff-b965-afa8ad6808db"
+      (reference "#PWR094") (unit 1) (value "VIN") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/f1f1d54c-59e8-4c7c-9257-85b5d8e5be5c"
+      (reference "#PWR095") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/2ed49adf-df71-4e37-94ee-afcd5d677269"
+      (reference "#PWR096") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/bff49ab9-9cd4-43a2-9fc1-1ab969c2e815"
+      (reference "#PWR097") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/d9e0edfe-2c88-4593-920b-8278dae148d8"
+      (reference "#PWR098") (unit 1) (value "3V3") (footprint "")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/abfc5437-0013-4c3a-8f5a-92f227249610"
+      (reference "#PWR099") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/84ec55a7-cdd9-41cc-9daa-addac706038b"
+      (reference "#PWR0100") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/8c78b531-00c6-426a-b75e-0d812e7558f5"
+      (reference "#PWR0101") (unit 1) (value "3V3") (footprint "")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/e6399aa4-ae54-48f2-ac4c-d0f6d2879af1"
+      (reference "#PWR0102") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/2d3573c1-18b8-4ec2-9ce9-bea043ed0d8d"
+      (reference "#PWR0103") (unit 1) (value "3V3") (footprint "")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/37cbf9f7-ccd8-42df-9f7a-6b9347a094f2"
+      (reference "#PWR0104") (unit 1) (value "3V3") (footprint "")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/3b00d4f9-938d-4b1c-be32-6426c76909bc"
+      (reference "#PWR0105") (unit 1) (value "3V3") (footprint "")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/622d6ece-5df7-4b9c-b800-653f5af9845e"
+      (reference "#PWR0106") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/34caa346-facf-4258-bfda-ecf249ace61b"
+      (reference "#PWR0107") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/4cf91504-5c20-46cf-8e0c-7396f1c118d8"
+      (reference "#PWR0108") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/17c865b7-2e7c-465a-9d00-03990c846c33"
+      (reference "#PWR0109") (unit 1) (value "3V3") (footprint "")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/18157c86-6fe2-41e2-862e-860e61cae2be"
+      (reference "#PWR0110") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/8e5aabfd-0b3b-4850-aed6-a0c95ec05656"
+      (reference "#PWR0111") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/7ddb5057-4bdd-4fd5-8037-7e1e981d1855"
+      (reference "C1") (unit 1) (value "GMK107BJ105KAHT-1u-35V") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/09f515c6-a08e-484e-ae28-0a543db353d5"
+      (reference "C2") (unit 1) (value "UMK212BBJ475KG-T-4u7-50V") (footprint "e-radionica.com footprinti:0805C")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/f15d0f29-893e-4a62-baee-61b16a2c17d1"
+      (reference "C3") (unit 1) (value "UMK212BBJ475KG-T-4u7-50V") (footprint "e-radionica.com footprinti:0805C")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/ccd521ea-738b-4be1-8341-0db4eb7f99d7"
+      (reference "C4") (unit 1) (value "GMK107BJ105KAHT-1u-35V") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/2298d10f-bb5a-4ef0-9aec-a99faec63da9"
+      (reference "C5") (unit 1) (value "GMK107BJ105KAHT-1u-35V") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/f83027bb-070f-4557-83ad-0674e9289727"
+      (reference "C6") (unit 1) (value "GMK107BJ105KAHT-1u-35V") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/7a838f72-ba56-4f82-afcf-9a380d690d5b"
+      (reference "C7") (unit 1) (value "UMK212BBJ475KG-T-4u7-50V") (footprint "e-radionica.com footprinti:0805C")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/3853fd75-af9d-45da-8752-a36110490c69"
+      (reference "C8") (unit 1) (value "UMK212BBJ475KG-T-4u7-50V") (footprint "e-radionica.com footprinti:0805C")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/90fdbdfe-1ed1-434a-bae4-a345087ae78d"
+      (reference "C9") (unit 1) (value "UMK212BBJ475KG-T-4u7-50V") (footprint "e-radionica.com footprinti:0805C")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/11373472-8a91-4578-bed7-64a0e1ed98fd"
+      (reference "C10") (unit 1) (value "UMK212BBJ475KG-T-4u7-50V") (footprint "e-radionica.com footprinti:0805C")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/5891a305-e0d9-4678-bb3b-175aa8f333cb"
+      (reference "C11") (unit 1) (value "10u") (footprint "e-radionica.com footprinti:1206C")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/b7ac74db-e0e3-4bf5-96e6-409ec9efec18"
+      (reference "C12") (unit 1) (value "DNP") (footprint "e-radionica.com footprinti:2917C")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/cec94809-afca-4bd8-8de5-cca65a16b4a5"
+      (reference "C13") (unit 1) (value "2u2") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/2e20ef52-b1a3-4354-ac1f-97e80af4d93e"
+      (reference "C14") (unit 1) (value "100n") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/c216d8b6-cc78-46c9-91c8-dfba66fc3698"
+      (reference "C15") (unit 1) (value "100n") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/4f6ca455-3fca-4fa3-9349-b0bbb6041763"
+      (reference "C16") (unit 1) (value "100n") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/c4606ba7-871a-4857-bf3f-b451edbc7b06"
+      (reference "C17") (unit 1) (value "10u") (footprint "e-radionica.com footprinti:1206C")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/429032de-5d4e-4803-89d6-bc5c81b55105"
+      (reference "C18") (unit 1) (value "100n") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/ce4ce86e-5627-4738-aca5-62ef32a61659"
+      (reference "C19") (unit 1) (value "100n") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/14384ab7-9237-42c8-b35d-9a3eaaf4d9aa"
+      (reference "C20") (unit 1) (value "DNP") (footprint "e-radionica.com footprinti:2917C")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/ccb69e04-acb6-42b8-9eec-6408997846e8"
+      (reference "C21") (unit 1) (value "2u2") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/2b93395d-a6ef-449d-b77d-7e01bfc92129"
+      (reference "C22") (unit 1) (value "2u2") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/7d7d36d8-4499-4520-bdc3-35909e0ca2cf"
+      (reference "C23") (unit 1) (value "10u") (footprint "e-radionica.com footprinti:1206C")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/e5eaf5f7-438f-4586-85d3-d29a0d1caf5f"
+      (reference "C24") (unit 1) (value "2u2") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/c1f638b9-9bc0-44dc-b304-ec66c7f0c4cb"
+      (reference "C25") (unit 1) (value "100n") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/15e81ace-0408-49c6-8334-d1d66d79415e"
+      (reference "C26") (unit 1) (value "100n") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/e911f5aa-ec07-4958-8f83-a29c67ef4e6d"
+      (reference "C27") (unit 1) (value "2u2") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/5f9f1542-7716-451f-be99-d0e874edeb87"
+      (reference "C28") (unit 1) (value "100n") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/1f0bb5d0-f2db-4b59-ae64-ed9996a626e5"
+      (reference "C29") (unit 1) (value "100n") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/71e34899-62c6-4222-b137-dde78d32868b"
+      (reference "C30") (unit 1) (value "DNP") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/6d40f3eb-973b-487c-ad25-681afa497c2e"
+      (reference "C31") (unit 1) (value "DNP") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/84bdbd5e-341b-41a8-8efa-cac3bf870154"
+      (reference "C32") (unit 1) (value "100n") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/5f111540-254b-4cf7-a68e-4f59c9531cd5"
+      (reference "C33") (unit 1) (value "2u2") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/dcb9d576-ef08-4b0c-9e76-23d256a58689"
+      (reference "C34") (unit 1) (value "100n") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/1b5313be-3ee2-4643-a32e-a26d0748f252"
+      (reference "C35") (unit 1) (value "100n") (footprint "e-radionica.com footprinti:0603C")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/b538f113-c8e2-43e0-b87a-2790e1cc7b42"
+      (reference "D1") (unit 1) (value "MBR0530T1G") (footprint "e-radionica.com footprinti:SOD−123")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/7ed6bb29-502e-4601-b242-c6a6b89cf86f"
+      (reference "D2") (unit 1) (value "MBR0530T1G") (footprint "e-radionica.com footprinti:SOD−123")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/edd4787d-6336-490e-9308-c50dfaa6eff9"
+      (reference "D3") (unit 1) (value "MBR0530T1G") (footprint "e-radionica.com footprinti:SOD−123")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/e98bb725-9616-4abe-8ece-48eb13bc2603"
+      (reference "D4") (unit 1) (value "RED") (footprint "e-radionica.com footprinti:0402LED")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/c3bb9159-53c3-4ed5-b3e7-067eeb7abaeb"
+      (reference "D5") (unit 1) (value "0603LED_SIDE") (footprint "e-radionica.com footprinti:LTST-S270GKT")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/283eee83-177e-4770-86de-0fe9b568feee"
+      (reference "D6") (unit 1) (value "BAT20J") (footprint "e-radionica.com footprinti:SOD-323")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/add9a246-51ba-46aa-8e6d-342424332777"
+      (reference "D7") (unit 1) (value "M4_DIODA") (footprint "e-radionica.com footprinti:M4_DIODA")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/84849bda-21a0-4df3-8649-6c1639727076"
+      (reference "D8") (unit 1) (value "M4_DIODA") (footprint "e-radionica.com footprinti:M4_DIODA")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/87956549-637c-4b51-a806-31797546d9ce"
+      (reference "F1") (unit 1) (value "1206FUSE-500mA") (footprint "e-radionica.com footprinti:1206FUSE")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/9243768c-3a50-4f45-a257-bec2d7cf9426"
+      (reference "FD1") (unit 1) (value "FIDUCIAL") (footprint "e-radionica.com footprinti:FIDUCIAL_23")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/638cebdc-8c33-4116-ae14-ffb967d6aca9"
+      (reference "FD2") (unit 1) (value "FIDUCIAL") (footprint "e-radionica.com footprinti:FIDUCIAL_23")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/78f511d1-d332-4c13-8aa1-de580b391d07"
+      (reference "H1") (unit 1) (value "Standoff_M3") (footprint "e-radionica.com footprinti:Standoff_M3")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/a6f6ac81-9f32-4dc8-8ab5-c9ca71e9f2f4"
+      (reference "H2") (unit 1) (value "Standoff_M3") (footprint "e-radionica.com footprinti:Standoff_M3")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/5067e99c-a783-4511-aacb-9d04f46650a2"
+      (reference "H3") (unit 1) (value "Standoff_M3") (footprint "e-radionica.com footprinti:Standoff_M3")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/6953cc6f-062c-43f9-81c1-45b389b573fd"
+      (reference "H4") (unit 1) (value "Standoff_M3") (footprint "e-radionica.com footprinti:Standoff_M3")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/cc816683-1567-4503-9b7f-a72ce2dc0dd3"
+      (reference "JP1") (unit 1) (value "SMD_JUMPER_3_PAD_CONNECTED_LEFT_TRACE") (footprint "e-radionica.com footprinti:SMD_JUMPER_3_PAD_CONNECTED_LEFT_TRACE")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/d8726583-585b-4950-9327-6a22a87d7342"
+      (reference "JP2") (unit 1) (value "SMD_JUMPER_3_PAD_CONNECTED_LEFT_TRACE") (footprint "e-radionica.com footprinti:SMD_JUMPER_3_PAD_CONNECTED_LEFT_TRACE")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/c0d035b0-5eb4-459e-8619-38956996add9"
+      (reference "JP3") (unit 1) (value "SMD_JUMPER_3_PAD_CONNECTED_LEFT_TRACE") (footprint "e-radionica.com footprinti:SMD_JUMPER_3_PAD_CONNECTED_LEFT_TRACE")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/03d84478-0942-4a0c-88d0-ef23e99c2d67"
+      (reference "JP4") (unit 1) (value "SMD_JUMPER") (footprint "e-radionica.com footprinti:SMD_JUMPER")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/35f6257f-ea5e-4afe-bc96-d6732a8e154a"
+      (reference "JP5") (unit 1) (value "SMD_JUMPER_3_PAD_CONNECTED_LEFT_TRACE") (footprint "e-radionica.com footprinti:SMD_JUMPER_3_PAD_CONNECTED_LEFT_TRACE")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/fa6764b9-e02a-4ddd-b9b5-0e72b8ca13c1"
+      (reference "JP6") (unit 1) (value "SMD_JUMPER_3_PAD_CONNECTED_LEFT_TRACE") (footprint "e-radionica.com footprinti:SMD_JUMPER_3_PAD_CONNECTED_LEFT_TRACE")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/44c58a95-0a71-48f1-bbe6-1098c2b01196"
+      (reference "K1") (unit 1) (value "SFV24R-2STBE1HLF") (footprint "e-radionica.com footprinti:SFV24R-2STBE1HLF")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/e30c9b26-0047-472e-aed6-213a00298241"
+      (reference "K2") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/fdabcc3b-21f7-496e-a2c2-912a36f7ba82"
+      (reference "K3") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/a0956299-8dff-465d-a002-b81f5747602f"
+      (reference "K4") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/85c78792-824b-4b87-8545-675fb74a5cd9"
+      (reference "K5") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/c8f49e14-26ec-45d1-bdf8-1fe677343802"
+      (reference "K6") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/7ed9763c-ac65-45cf-9acc-aa8a18e2d779"
+      (reference "K7") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/cb327d7c-ac57-4be4-a5e9-3a8a47fbf6b8"
+      (reference "K8") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/d89329a4-d75c-44a1-ab81-ee6e2bc21b94"
+      (reference "K9") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/c34e2873-988a-4345-959d-0181c94cfc9f"
+      (reference "K10") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/70b190fb-f7c0-4202-ae01-c69df1be0109"
+      (reference "K11") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/2892dc2b-09b7-4145-b786-8dfc84b0fd8d"
+      (reference "K12") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/bd933f51-4a4a-4751-bce6-ffcd9900c861"
+      (reference "K13") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/a82f7aea-d583-487c-82c8-7e0797ab5c02"
+      (reference "K14") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/98c22792-0834-4f11-9b8c-8e96da9b4718"
+      (reference "K15") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/72a34f1d-7d61-4acf-87d8-e6954ae7f4f7"
+      (reference "K16") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/e74cc5f4-c664-49d8-8b6f-123ed3ccb395"
+      (reference "K17") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/82d16010-f229-48d8-aea9-c3cb2ce00ac8"
+      (reference "K18") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/6a2168c6-0954-4dff-ac8e-118d0fafcf07"
+      (reference "K19") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/7b65baa6-fa98-4acf-a7b3-96560084e851"
+      (reference "K20") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/8a7ba552-6323-48f8-b67f-52cb829945c3"
+      (reference "K21") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/faa6b233-a38f-4916-a20c-a2be67cf8518"
+      (reference "K22") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/2c4cc815-966f-434f-ad5a-5874ecb9226f"
+      (reference "K23") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/d9888dc7-a86c-4225-9c51-6c6fe198f04c"
+      (reference "K24") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/eb3cd951-e2db-4d36-a1e2-d69371c3b40a"
+      (reference "K25") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/13569349-b4cb-415d-b0db-5d2cc97f6895"
+      (reference "K26") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/d397838c-2033-441b-94c7-f3148f620505"
+      (reference "K27") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/c7d8b7da-b6f0-4509-938e-c45693861b4d"
+      (reference "K28") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/0c1c3a9c-8461-41be-b2d1-6b662200ca49"
+      (reference "K29") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/25eac590-5a13-4dd3-ae28-dba5fdc88ab9"
+      (reference "K30") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/7d43a017-a93d-49fb-91ca-9603990499e5"
+      (reference "K31") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/0f27b039-5270-4f1d-9bc3-573188496ecd"
+      (reference "K32") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/6ebf23b2-b4c9-488c-9c8d-d62deada28b2"
+      (reference "K33") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/72e8f123-0bc8-4f5c-8f5e-c042829ee45d"
+      (reference "K34") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/3559822b-1618-4113-abd9-10ddb41e9bd0"
+      (reference "K35") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/2b8f9035-c4ba-4acb-8c8e-2b186e0ff025"
+      (reference "K36") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/676da9be-c8fd-4c1e-b0d0-9117fed7bfc7"
+      (reference "K37") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/ab29ef44-8756-4c6d-9903-b6b78c3097f3"
+      (reference "K38") (unit 1) (value "Inkplate_TP") (footprint "e-radionica.com footprinti:INKPLATE TEST HEADER")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/5256f4a7-232a-4fa4-8bc3-be8432e1a401"
+      (reference "K39") (unit 1) (value "U262-161N-4BVC11") (footprint "e-radionica.com footprinti:U262-161N-4BVC11")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/f3fe3bb0-ac78-4a5b-9b7f-8a272e9e766b"
+      (reference "K40") (unit 1) (value "easyC-SMD") (footprint "e-radionica.com footprinti:easyC-connector")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/388e639e-7679-4573-ac74-0484fe0466bd"
+      (reference "K41") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/3ce703fd-d5a5-4724-b833-0934466fe644"
+      (reference "K42") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/407ef8ef-9ad4-4c68-980b-5cd5528c5fae"
+      (reference "K43") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/00c56ca8-2213-40b8-ac19-823e3f5638db"
+      (reference "K44") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/6e364444-01d6-4819-95e5-0915ccf4fea2"
+      (reference "K45") (unit 1) (value "JST-2pin-SMD") (footprint "e-radionica.com footprinti:JST-2pin-SMD")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/767cac5e-2afc-4d5a-ac68-bd36ec722b1e"
+      (reference "K46") (unit 1) (value "HEADER_MALE_1X1_Inkplate") (footprint "e-radionica.com footprinti:HEADER_MALE_1X1_Inkplate")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/588a7399-eda0-4724-b87f-d8f92342fb7c"
+      (reference "K47") (unit 1) (value "HYC77-TF09-200") (footprint "e-radionica.com footprinti:HYC77-TF09-200")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/55abc483-3461-48ec-8118-7913a4407bd1"
+      (reference "K48") (unit 1) (value "CR2032_BS-6-1") (footprint "e-radionica.com footprinti:CR2032-BS-6-1")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/d549575d-c980-4d5c-9479-c6a6bb1125c4"
+      (reference "L1") (unit 1) (value "SRN5040TA-680K-68u") (footprint "e-radionica.com footprinti:SRN5040TA-680K")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/25df6b5f-31de-4d9c-a0c6-10248b18d948"
+      (reference "PAD1") (unit 1) (value "PAD_4x4") (footprint "e-radionica.com footprinti:PAD_4x4")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/6b00e99b-b4ca-463a-a99f-65338e6026bd"
+      (reference "PAD2") (unit 1) (value "PAD_4x4") (footprint "e-radionica.com footprinti:PAD_4x4")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/9339008b-f2e6-4025-96da-2cb63a426cc4"
+      (reference "PAD3") (unit 1) (value "PAD_4x4") (footprint "e-radionica.com footprinti:PAD_4x4")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/81592f36-4964-4a9e-9dd6-f3ac0571df59"
+      (reference "PAD4") (unit 1) (value "PAD_4x4") (footprint "e-radionica.com footprinti:PAD_4x4")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/daf16d64-7a3e-49ba-a2bb-cbbd101eb00e"
+      (reference "PAD5") (unit 1) (value "PAD_4x4") (footprint "e-radionica.com footprinti:PAD_4x4")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/8ab962c1-ac47-469d-bddc-496c638a0d7e"
+      (reference "PAD6") (unit 1) (value "PAD_4x4") (footprint "e-radionica.com footprinti:PAD_4x4")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/81dc6f58-9039-4073-94f5-969df7e8a95e"
+      (reference "PAD7") (unit 1) (value "PAD_4x4") (footprint "e-radionica.com footprinti:PAD_4x4")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/43aed739-0e56-462e-8868-aea779eb6d8f"
+      (reference "PAD8") (unit 1) (value "PAD_4x4") (footprint "e-radionica.com footprinti:PAD_4x4")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/0d470b46-6bf2-41b5-bd22-5bdde0314356"
+      (reference "PAD9") (unit 1) (value "PAD_4x4") (footprint "e-radionica.com footprinti:PAD_4x4")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/d9143854-5e50-479d-894e-2292ac2f10ef"
+      (reference "Q1") (unit 1) (value "NMOS") (footprint "e-radionica.com footprinti:SOT-23-3")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/ec662d3c-e31e-42ce-a52a-54791008adae"
+      (reference "Q2") (unit 1) (value "PMOS") (footprint "e-radionica.com footprinti:SOT-23-3")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/380b4184-be37-4c29-9aa1-ab97832ed532"
+      (reference "Q3") (unit 1) (value "CJ2310") (footprint "e-radionica.com footprinti:SOT-23-3")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/28bee256-2dce-48bb-b315-102d9ee26d3b"
+      (reference "Q4") (unit 1) (value "NPN") (footprint "e-radionica.com footprinti:SOT-23-3")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/89c1841a-fbd7-4bd4-b07c-fcbb1e2aab50"
+      (reference "Q5") (unit 1) (value "NPN") (footprint "e-radionica.com footprinti:SOT-23-3")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/95ec6529-38c7-4a49-93d1-e57d2d768fc3"
+      (reference "Q6") (unit 1) (value "NMOS") (footprint "e-radionica.com footprinti:SOT-23-3")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/091956c9-7497-4fa6-8bf9-75af114eea7c"
+      (reference "Q7") (unit 1) (value "PMOS") (footprint "e-radionica.com footprinti:SOT-23-3")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/fb155ee2-7b3d-47c5-8687-2d9417eb9af6"
+      (reference "Q8") (unit 1) (value "PMOS") (footprint "e-radionica.com footprinti:SOT-23-3")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/2ff0c76d-593b-4d62-9b0f-28351f940837"
+      (reference "Q9") (unit 1) (value "SSM3J358R,LF") (footprint "e-radionica.com footprinti:SOT-23-3")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/4a2888f9-a9c3-445e-9939-395304b488a6"
+      (reference "Q10") (unit 1) (value "NPN") (footprint "e-radionica.com footprinti:SOT-23-3")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/e3b83887-a458-40d6-ac20-ad91b255ab17"
+      (reference "Q11") (unit 1) (value "SSM3J358R,LF") (footprint "e-radionica.com footprinti:SOT-23-3")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/4a3d7ca7-132d-4223-9a4c-5e09351c4355"
+      (reference "Q12") (unit 1) (value "PMOS") (footprint "e-radionica.com footprinti:SOT-23-3")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/9167d64e-691b-49d2-aa0b-617b235bc81c"
+      (reference "R1") (unit 1) (value "100R") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/1678457b-b831-4280-b4c3-abb6b68bc3f6"
+      (reference "R2") (unit 1) (value "10k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/fd5bc414-f909-4974-a671-f826d4ef6f6b"
+      (reference "R3") (unit 1) (value "10k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/c310ff8e-5696-42d0-92c0-1487df9b96b3"
+      (reference "R4") (unit 1) (value "DNP") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/6b009df3-a044-453d-8d3d-ad62ec502a23"
+      (reference "R5") (unit 1) (value "100k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/43f7943c-db71-4611-9db1-be6b83eeabd8"
+      (reference "R6") (unit 1) (value "100k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/6b401a2b-d810-41d3-a46e-afbabd559c8e"
+      (reference "R7") (unit 1) (value "100k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/dee7568f-d4a9-4c26-869e-507ac25cf356"
+      (reference "R8") (unit 1) (value "100k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/22bd0cc1-1dcd-4461-9bcb-bac1be733cde"
+      (reference "R9") (unit 1) (value "10k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/2749cb23-5cae-4119-bcd6-22b452303301"
+      (reference "R10") (unit 1) (value "0R47") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/ec3e38e3-3142-4b2c-a583-80b930b7aead"
+      (reference "R11") (unit 1) (value "10k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/5304cac8-c45d-4937-8f4f-0a203d1a96c1"
+      (reference "R12") (unit 1) (value "10k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/36ab5562-0896-464e-a830-1972ef0eec7e"
+      (reference "R13") (unit 1) (value "5k1") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/503fcf84-3a2e-420e-ba70-65c46816f626"
+      (reference "R14") (unit 1) (value "5k1") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/aefb2e65-169d-41f3-b77a-11edb289091b"
+      (reference "R15") (unit 1) (value "10k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/85640e1d-5e1c-4913-82f3-38ab5525bd77"
+      (reference "R16") (unit 1) (value "10k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/05181175-094b-48dd-9ce8-f9ac6a3d2d48"
+      (reference "R17") (unit 1) (value "47k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/298be690-a27f-4d99-a5e7-110bf62fd468"
+      (reference "R18") (unit 1) (value "1k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/cdd5bf41-8164-4d38-9a83-4a5674678fff"
+      (reference "R19") (unit 1) (value "1k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/416f91ae-499d-4dfa-9588-a807676eb1ec"
+      (reference "R20") (unit 1) (value "100k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/a1caf20a-631d-4be5-87ad-977542ef74a9"
+      (reference "R21") (unit 1) (value "10k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/0a1b0e50-24f7-4cfe-a3b7-b24161be9b42"
+      (reference "R22") (unit 1) (value "10k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/fb989127-840f-4f88-9ff6-faab09347104"
+      (reference "R23") (unit 1) (value "1k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/dfb1c567-91ac-4d75-a5ac-e779c4226b7a"
+      (reference "R24") (unit 1) (value "510k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/90e3f248-c455-4f1a-8764-0906068e6ad3"
+      (reference "R25") (unit 1) (value "100k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/7ea7048d-c83c-48ac-9e88-5b717348d0b1"
+      (reference "R26") (unit 1) (value "100k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/e39ef703-6a3a-434a-8a15-41eb74a793ed"
+      (reference "R27") (unit 1) (value "2k49") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/63cc740b-4101-404b-9cad-953620ae28fc"
+      (reference "R28") (unit 1) (value "47R") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/2a7ae024-0e21-4143-bc14-9781aa09a3ac"
+      (reference "R29") (unit 1) (value "DNP") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/ac299b20-d06d-4a38-8ba8-e174af751ab6"
+      (reference "R30") (unit 1) (value "1k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/c6772e8e-1960-44aa-8d9f-db6161e8adb6"
+      (reference "R31") (unit 1) (value "100k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/f90ceda7-a3b6-4c13-8e65-aa55a7e7bef7"
+      (reference "R32") (unit 1) (value "1k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/ed0a645a-8744-4edf-9701-e8ea6d3c5ed9"
+      (reference "R33") (unit 1) (value "100k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/4bc0d7b2-0027-43c1-8423-ba553d2b602b"
+      (reference "R34") (unit 1) (value "100k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/040e5de9-4c44-49b8-8793-752fa594e5c9"
+      (reference "R35") (unit 1) (value "100k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/1af35573-476a-4a21-963a-ce33097e0ece"
+      (reference "R36") (unit 1) (value "100k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/6d91c9cf-767c-423a-91e4-52de8a630284"
+      (reference "R37") (unit 1) (value "10k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/0140ee5c-8085-4401-b7f2-747af0246830"
+      (reference "R38") (unit 1) (value "100k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/75d4a196-b259-409d-b0f3-b29b571c683b"
+      (reference "R39") (unit 1) (value "100k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/43836d1a-351c-434c-ba33-b080d96e70ec"
+      (reference "R40") (unit 1) (value "100k") (footprint "e-radionica.com footprinti:0603R")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/7e3eb752-a0e3-46a2-8bd9-04c161755a02"
+      (reference "S1") (unit 1) (value "SK-3296S-01-L1") (footprint "e-radionica.com footprinti:SK-3296S-01-L1")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/bd472854-3913-4b90-b9c9-04fbef58e86a"
+      (reference "SW1") (unit 1) (value "YTSA007A0151803B") (footprint "e-radionica.com footprinti:YTSA007A0151803B")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/8ce33249-4491-46f6-9a13-d5eff0b4e116"
+      (reference "SW2") (unit 1) (value "K2-1114SA-A4SW-06") (footprint "e-radionica.com footprinti:K2-1114SA-A4SW-06")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/bb33cd3c-38ef-400c-b4ac-bd8cf3161f71"
+      (reference "SW3") (unit 1) (value "K2-1114SA-A4SW-06") (footprint "e-radionica.com footprinti:K2-1114SA-A4SW-06")
+    )
+    (path "/d4876469-b949-49ce-b8fe-43cb458692a4/afe52194-e140-44f1-976d-1f4b7f4246c1"
+      (reference "U1") (unit 1) (value "E075A01-A8") (footprint "e-radionica.com footprinti:E075A01-A8")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/13204a2f-2d68-4918-9c71-00fb3dd58035"
+      (reference "U2") (unit 1) (value "PCAL6416AHF,128") (footprint "e-radionica.com footprinti:PCAL6416AHF,128")
+    )
+    (path "/85688a88-775e-4a4d-a286-17d06163e760/ebb5e93b-b65f-4a55-a2d7-921f182df04d"
+      (reference "U3") (unit 1) (value "ESP32-WROVER") (footprint "e-radionica.com footprinti:ESP32-WROVER")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/45e7d163-49b2-458b-abee-2cb126e1e511"
+      (reference "U4") (unit 1) (value "TPS3840PL27DBVR") (footprint "e-radionica.com footprinti:SOT-23-5")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/4f7a83a3-5600-41c1-ad7c-cd4520aa9807"
+      (reference "U5") (unit 1) (value "CH340C") (footprint "e-radionica.com footprinti:SOP-16")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/4b6db5bd-bcb7-494a-9687-0e5e107f8887"
+      (reference "U6") (unit 1) (value "MCP73831T") (footprint "e-radionica.com footprinti:SOT-23-5")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/e7b58889-53c3-4565-83a3-4012c4b11c52"
+      (reference "U7") (unit 1) (value "MC14093BDTR2G") (footprint "e-radionica.com footprinti:TSSOP-14")
+    )
+    (path "/d7f5ed70-e933-478e-bfdc-450d0e05c7a0/aadb3a61-d1c2-49fb-bf58-2c2642c06a8c"
+      (reference "U8") (unit 1) (value "TPS7A2633DRVR") (footprint "e-radionica.com footprinti:TPS7A2633DRVR")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/c934ee36-7512-4e94-95ad-5d843e744e6e"
+      (reference "U9") (unit 1) (value "PCF85063A") (footprint "e-radionica.com footprinti:PCF85063A")
+    )
+    (path "/45eec7c6-a15e-409c-8574-297c02f7ea13/08181746-67eb-4d68-872a-d589622d0f15"
+      (reference "X1") (unit 1) (value "7LC32768F12UC") (footprint "e-radionica.com footprinti:ABS07AIG-32.768KHZ-7-D-T")
+    )
+  )
+)
